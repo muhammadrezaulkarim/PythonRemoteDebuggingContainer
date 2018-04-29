@@ -1,17 +1,16 @@
-FROM gliderlabs/alpine:3.3
+FROM alpine:3.5
 
 RUN apk add --update \
     python \
     python-dev \
     py-pip \
     build-base \
-  && pip install virtualenv \
+  && pip install --no-cache-dir -r requirements.txt
   && rm -rf /var/cache/apk/*
 
-WORKDIR /app
+WORKDIR /usr/src/app
 
-ONBUILD COPY . /app
-ONBUILD RUN virtualenv /env && /env/bin/pip install -r /app/requirements.txt
+COPY . /usr/src/app
 
 EXPOSE 8082
-CMD ["/env/bin/python", "PythonHelloWorld.py"]
+CMD ["/usr/bin/python", "PythonHelloWorld.py"]
