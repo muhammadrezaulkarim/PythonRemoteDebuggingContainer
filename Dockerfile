@@ -5,7 +5,7 @@ RUN apk add --update \
     python-dev \
     py-pip \
     build-base \
-  && pip install --no-cache-dir -r requirements.txt
+  && pip install --no-cache-dir -r requirements.txt \
   && rm -rf /var/cache/apk/*
 
 WORKDIR /usr/src/app
