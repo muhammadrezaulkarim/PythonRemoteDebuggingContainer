@@ -3,7 +3,7 @@ FROM alpine:3.5
 RUN apk add --update \
     python \
     python-dev \
-    py-pip \
+    py2-pip \
     build-base \
   && pip install --no-cache-dir -r requirements.txt \
   && rm -rf /var/cache/apk/*
