@@ -1,7 +1,7 @@
 import ptvsd
-ptvsd.enable_attach('my_secret',('0.0.0.0', 8082))
+ptvsd.enable_attach("my_secret", address = ('192.168.99.100', 3000))
+# Enable the line of source code below only if you want the application to wait until the debugger has attached to it
 ptvsd.wait_for_attach()
-ptvsd.break_into_debugger()
 
 print("Hello, Docker")    # outputs Hello Docker message to the console
 msg = 2
