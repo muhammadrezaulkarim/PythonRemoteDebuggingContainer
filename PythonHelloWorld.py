@@ -1,5 +1,5 @@
 import ptvsd
-ptvsd.enable_attach("my_secret", address = ('192.168.99.100', 3000))
+ptvsd.enable_attach("my_secret", address = ('192.168.99.100', 8082))
 # Enable the line of source code below only if you want the application to wait until the debugger has attached to it
 ptvsd.wait_for_attach()
 
