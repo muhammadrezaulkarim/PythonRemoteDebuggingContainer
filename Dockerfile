@@ -1,9 +1,9 @@
-FROM alpine:3.5
+FROM alpine:3.3
 
 RUN apk add --update \
     python \
     python-dev \
-    py2-pip \
+    py-pip \
     build-base \
   && pip install --no-cache-dir -r requirements.txt \
   && rm -rf /var/cache/apk/*
