@@ -1,5 +1,5 @@
 import ptvsd
-ptvsd.enable_attach('my_secret')
+ptvsd.enable_attach('my_secret',('0.0.0.0', 8082))
 ptvsd.wait_for_attach()
 ptvsd.break_into_debugger()
 
