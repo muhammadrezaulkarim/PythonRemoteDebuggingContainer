@@ -1,5 +1,7 @@
 import ptvsd
 ptvsd.enable_attach('my_secret')
+ptvsd.wait_for_attach()
+ptvsd.break_into_debugger()
 
 print("Hello, Docker")    # outputs Hello Docker message to the console
 msg = 2
