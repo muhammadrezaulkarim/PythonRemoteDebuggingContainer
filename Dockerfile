@@ -13,4 +13,5 @@ RUN apk add --update \
   && rm -rf /var/cache/apk/*
 
 EXPOSE 8082
+EXPOSE 5678
 CMD ["/usr/bin/python", "PythonHelloWorld.py"]
