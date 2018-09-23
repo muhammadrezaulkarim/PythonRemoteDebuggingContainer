@@ -1,4 +1,4 @@
-FROM alpine:3.3
+FROM python:3.6.6-alpine3.6
 
 WORKDIR /usr/src/app
 
@@ -14,4 +14,4 @@ RUN apk add --update \
 
 EXPOSE 8082
 EXPOSE 5678
-CMD ["/usr/bin/python", "PythonHelloWorld.py"]
+CMD ["/usr/local/bin/python", "PythonHelloWorld.py"]
