@@ -7,7 +7,7 @@ WORKDIR /usr/src/app
 COPY . /usr/src/app
 
 RUN apk add --update \
-    py-pip \
+  py-pip \
   && pip install --no-cache-dir -r requirements.txt \
   && rm -rf /var/cache/apk/*
 
