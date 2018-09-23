@@ -8,7 +8,6 @@ COPY . /usr/src/app
 
 RUN apk add --update \
     py-pip \
-    build-base \
   && pip install --no-cache-dir -r requirements.txt \
   && rm -rf /var/cache/apk/*
 
