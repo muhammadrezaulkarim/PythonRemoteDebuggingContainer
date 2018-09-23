@@ -1,5 +1,5 @@
 import ptvsd
-ptvsd.enable_attach(secret=None, address = ('127.0.0.1', 5678))
+ptvsd.enable_attach(address = ('127.0.0.1', 5678), redirect_output=True)
 # Enable the line of source code below only if you want the application to wait until the debugger has attached to it
 ptvsd.wait_for_attach()
 
