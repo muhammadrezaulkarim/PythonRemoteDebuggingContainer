@@ -1,14 +1,7 @@
-<<<<<<< HEAD
-#import ptvsd
-#ptvsd.enable_attach(address = ('0.0.0.0', 5678), redirect_output=True)
-# Enable the line of source code below only if you want the application to wait until the debugger has attached to it
-#ptvsd.wait_for_attach()
-=======
 import ptvsd
 ptvsd.enable_attach(address = ('0.0.0.0', 5678), redirect_output=True)
 # Enable the line of source code below only if you want the application to wait until the debugger has attached to it
 ptvsd.wait_for_attach()
->>>>>>> 1383b52c058b457ae7410ad62b7f105b4f30a099
 
 from manipulator.numbermanipulator import squared_num
 import random
